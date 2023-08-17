@@ -1,0 +1,50 @@
+.parent-container {
+  border: 2px solid greenyellow;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  min-height: 100vh;
+}
+
+.item1 {
+  border: 1px solid blue;
+  background-color: aqua;
+  height: 100vh;
+}
+
+.item2 {
+  border: 1px solid red;
+  background-color: none;
+  grid-area: 1 / 2 / 2 / 3;
+  display: grid;
+  grid-template-rows: 1fr 3fr;
+}
+
+.item2-1 {
+  border: 1px dotted orange;
+  background-color: rgb(7, 71, 71);
+}
+
+.item2-2 {
+  border: 1px dotted rgb(193, 75, 11);
+  background-color: none;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+
+.projects {
+  background-color: rgb(70, 70, 210);
+}
+
+.side-bar {
+  background-color: rgb(112, 226, 188);
+  display: grid;
+  grid-template-rows: 1.5fr 2fr;
+}
+
+.announcements {
+  background-color: beige;
+}
+
+.Trending {
+  background-color: rgb(205, 68, 116);
+}
