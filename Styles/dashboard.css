@@ -1,3 +1,4 @@
+
 .parent-container {
   border: 2px solid greenyellow;
   display: grid;
@@ -6,13 +7,34 @@
 }
 
 .item1 {
-  border: 1px solid blue;
-  background-color: aqua;
+  background-image: linear-gradient(to left, rgb(45, 45, 189), rgb(194, 27, 27));
   height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6,1fr);
+}
+
+.side-bar1 {
+  display: flex;
+  height: 38px;
+  padding-left: 5px;
+  margin-left: 5px;
+  color: white;
+  font-weight: 600;
+}
+
+p {
+  margin-left: 10px;
+}
+
+.logo-bar-image {
+  object-fit: cover;
+  height: 150px;
+  margin-left: 45px;
+  padding-top: 10px;
 }
 
 .item2 {
-  border: 1px solid red;
   background-color: none;
   grid-area: 1 / 2 / 2 / 3;
   display: grid;
@@ -20,19 +42,54 @@
 }
 
 .item2-1 {
-  border: 1px dotted orange;
   background-color: rgb(7, 71, 71);
 }
 
 .item2-2 {
-  border: 1px dotted rgb(193, 75, 11);
   background-color: none;
   display: grid;
   grid-template-columns: 3fr 1fr;
 }
 
 .projects {
-  background-color: rgb(70, 70, 210);
+  display: grid;
+  grid-template-rows: 1fr 6fr; 
+  background-image: linear-gradient(to left, rgb(13, 99, 13), blue)
+}
+
+.project-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  gap: 20px;
+  
+}
+
+.card {
+  justify-self: center;
+  align-self: center;
+}
+
+.card-image {
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  z-index: 2;
+  border: 2px solid white;
+  cursor: pointer;
+}
+
+.your-projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial Black (sans-serif);
+  font-size: 40px;
+  color: white;
+  font-style: italic;
+  font-weight: 700;
 }
 
 .side-bar {
