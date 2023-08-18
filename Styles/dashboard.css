@@ -7,7 +7,7 @@
 }
 
 .item1 {
-  background-image: linear-gradient(to left, rgb(45, 45, 189), rgb(194, 27, 27));
+  background-image: linear-gradient(to left, rgb(113, 113, 228), rgb(194, 27, 27));
   height: 100vh;
   display: grid;
   grid-template-columns: 1fr;
@@ -43,6 +43,39 @@ p {
 
 .item2-1 {
   background-color: rgb(7, 71, 71);
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  background-image: linear-gradient(to bottom, rgb(89, 233, 127), rgb(84, 84, 226));
+  border: none;
+}
+
+.search-bar {
+  height: 25px;
+  width: 45vw;
+  justify-self: center;
+  align-self: center;
+  border: none;
+  border-radius: 15px;
+}
+
+.welcome {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  color: white;
+  font-family: Arial(serif); 
+}
+
+.mascot {
+  height: 50px;
+  width: 50px;
+  margin-left: 50px;
+  border-radius: 25px;
+}
+
+.mascot:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s ease-in-out;
 }
 
 .item2-2 {
@@ -54,7 +87,7 @@ p {
 .projects {
   display: grid;
   grid-template-rows: 1fr 6fr; 
-  background-image: linear-gradient(to left, rgb(13, 99, 13), blue)
+  background-image: linear-gradient(to left, rgb(64, 140, 64), rgb(45, 45, 189))
 }
 
 .project-cards {
@@ -81,6 +114,11 @@ p {
   cursor: pointer;
 }
 
+.card-image:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+
 .your-projects {
   display: flex;
   justify-content: center;
@@ -99,9 +137,49 @@ p {
 }
 
 .announcements {
-  background-color: beige;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  font-size: 12px;
+  background-image: linear-gradient(to left, blue, rgb(13, 99, 13));
+  font-family: arial (sans-serif);
+  color: white;
 }
+
+.news1 {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.news-image {
+  height: 40px;
+  width: 40px;
+  object-fit: cover;
+  margin-left: 5px;
+  border-radius: 20px;
+}
+
 
 .Trending {
   background-color: rgb(205, 68, 116);
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 10px;
+  justify-items: center;
+  align-items: center;
+  padding: 5px;
+  background-image: linear-gradient(to left, rgb(6, 66, 26), rgb(13, 8, 63));
+}
+
+.trending-image {
+  height: 60px;
+  object-fit: cover;
+  border-radius: 60px;
+  border: none; 
+}
+
+.trending-image:hover {
+  transform: scale(1.3);
+  transition: 0.5s;
+  cursor: pointer;
 }
