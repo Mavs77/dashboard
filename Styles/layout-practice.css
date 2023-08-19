@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("/Background-Image.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 20px;
+  z-index: 2;
+  justify-items: center;
+  align-items: center;
+  margin-top: 15vh;
+  position: absolute;
+  top: 5vh; 
+  left: 20vw; 
+  opacity: 0.7;
+}
+
+.grid-image {
+  z-index: 2;
+  height: 20vh;
+  width: 20vw;
+  object-fit: cover;
+  object-position: center center;
+  border: 3px solid white;
+  aspect-ratio: 1 / 1;
+}
