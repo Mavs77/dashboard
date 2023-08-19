@@ -86,7 +86,13 @@ p {
 .projects {
   display: grid;
   grid-template-rows: 1fr 6fr; 
-  background-image: linear-gradient(to left, rgb(64, 140, 64), rgb(45, 45, 189))
+  background-image: linear-gradient(to left, rgb(64, 140, 64), rgb(45, 45, 189)); 
+  height: 75vh;
+  width: 60vw;
+  background-image: url("/Background-Image.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
 }
 
 .project-cards {
@@ -123,10 +129,12 @@ p {
   justify-content: center;
   align-items: center;
   font-family: Arial Black (sans-serif);
-  font-size: 40px;
-  color: white;
+  font-size: 80px;
+  color: rgb(41, 187, 220);
   font-style: italic;
   font-weight: 700;
+  text-transform: uppercase ;
+  -webkit-text-stroke: 4px rgb(3, 53, 15);
 }
 
 .side-bar {
